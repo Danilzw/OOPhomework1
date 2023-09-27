@@ -14,6 +14,11 @@ public class Pants  extends Products{
             this.thickness = thickness;
         }
     }
+
+    public double GetPrice()
+    {
+        return price;
+    }
     
     public String printino()
     {

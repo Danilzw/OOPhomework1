@@ -17,9 +17,18 @@ public class Shirts extends Products {
        
     }
 
+    public double GetPrice()
+    {
+        return price;
+    }
+
     public String printino()
     {
         return String.format("Your Product:<Shirt> %s -- %.2f -- %d -- %d",brand,price,amount,thickness);
+    }
+
+    public String toString() {
+        return String.format("Shirt: %s, Price: %.2f, Amount: %d, Thickness: %d", brand, price, amount, thickness);
     }
     
 }

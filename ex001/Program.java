@@ -1,5 +1,7 @@
 package ex001;
 
+import java.util.ArrayList;
+
 public class Program
 {
     public static void main(String[] args) {
@@ -16,5 +18,23 @@ public class Program
 
         Products Pants = new Pants("StartUP",10.99,15,160);
         System.out.println(Pants.printino());
+
+        ArrayList<Products> productslist = new ArrayList<>();
+        productslist.add(products);
+        productslist.add(shirts);
+        productslist.add(hats);
+        productslist.add(Pants);
+
+        Machine machine = new Machine(productslist);
+        Shirts shirts1 = machine.getShirts(20);
+        if(shirts1 == null)
+        {
+            System.out.println("Нет такой футболки");
+        }
+        else
+        {
+            System.out.println("Есть вариант:");
+            System.out.println(shirts.toString());
+        }
     }
 }

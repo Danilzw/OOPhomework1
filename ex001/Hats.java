@@ -16,6 +16,11 @@ public class Hats extends Products {
         }
     }
 
+    public double GetPrice()
+    {
+        return price;
+    }
+
     public String printino()
     {
         return String.format("Your Product:<Hats> %s -- %.2f -- %d -- %d",brand,price,amount,thickness);
